@@ -58,8 +58,8 @@ def make_triangle_connection(patch):
     n_in_strip = patch["width"]
     tris = np.zeros((n_strips*n_in_strip*2,3))
  
-    for i in xrange(n_in_strip):
-        for j in xrange(n_strips):
+    for i in range(n_in_strip):
+        for j in range(n_strips):
             i00=i+n_in_strip*j
             i01=i+n_in_strip*(1+j)
             i11=(i+1)%n_in_strip+n_in_strip*(1+j)
@@ -82,7 +82,7 @@ def cover_apex(nodes_renum, tris, patch,principal_axis=0):
     nodes_covered[1:,:] = nodes_renum
     nodes_covered[0,:] = p_coor
     tris_covered[n_in_strip:,:]=tris+1
-    for i in xrange(n_in_strip):
+    for i in range(n_in_strip):
         tris_covered[i,:] = [0,i+1,(i+1)%n_in_strip+1]
  
      
@@ -232,7 +232,7 @@ if __name__=="__main__":
  
     # Remove bad nodes
     tris_final_temp = tris_final.flatten()
-    for i in xrange(tris_final.size):
+    for i in range(tris_final.size):
         node_i = tris_final_temp[i]
         if node_i in bad_indices:
             if node_i not in new_indices:
