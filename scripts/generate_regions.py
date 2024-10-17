@@ -38,8 +38,8 @@ Want to set all the remaining points to the given region_nr
 def last_region(region_nr,rem_pts):
 	for i in range(len(rem_pts)):
 		x=rem_pts[i,0]
- 		y=rem_pts[i,1]
- 		z=rem_pts[i,2]
+		y=rem_pts[i,1]
+		z=rem_pts[i,2]
 		out_done.write('{} {} {} {}\n'.format(x,y,z,region_nr))
 	nr_reg_out=open('nr_regions_Patient_{}.dat'.format(sys.argv[3]),'w')
 	nr_reg_out.write('{}\n'.format(region_nr))
