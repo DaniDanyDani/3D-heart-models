@@ -1,0 +1,3 @@
+/home/daniel/3D-heart-models/Convertion_Process/ConvertFile/build/CMakeFiles/ConvertFile.dir
+/home/daniel/3D-heart-models/Convertion_Process/ConvertFile/build/CMakeFiles/edit_cache.dir
+/home/daniel/3D-heart-models/Convertion_Process/ConvertFile/build/CMakeFiles/rebuild_cache.dir

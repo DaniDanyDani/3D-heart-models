@@ -28,7 +28,7 @@ temp(:)=temp(:);
 z=max(temp(:,3));
 
 for i=1:localSEG.ZSize
-    temp1=find(temp(:,3)==z);
+    temp1=find(temp(:,3)<=z);
     [c,~]=size(temp1);
     for j=1:c
         x=temp(temp1(j),1);
