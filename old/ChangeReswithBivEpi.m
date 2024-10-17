@@ -5,11 +5,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function SEG_NewRes = ChangeReswithBivEpi(SEG)
 
-SEG
-
 %% Account for voxel size for SEG1
 % Account for voxel size
+if ~isstruct(SEG)
+    error('SEG deve ser uma estrutura. Tipo atual: %s', class(SEG));
+end
+
 SEG.EndoXold   = SEG.EndoXnew;
+
+if ~isstruct(SEG)
+    error('SEG deve ser uma estrutura. Tipo atual: %s', class(SEG));
+end
+
 SEG.EndoYold   = SEG.EndoYnew;
 SEG.EpiXold    = SEG.EpiXnew;
 SEG.EpiYold    = SEG.EpiYnew;

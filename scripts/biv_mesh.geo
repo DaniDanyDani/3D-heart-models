@@ -15,8 +15,8 @@ Mesh.RemeshAlgorithm = 1; // (0=no split, 1=automatic, 2=automatic only with met
 //Mesh.Algorithm3D    = 4; // (1=Delaunay, 4=Frontal, 5=Frontal Delaunay, 6=Frontal Hex, 7=MMG3D, 9=R-tree) (Default=1)
 //Mesh.Recombine3DAll = 0;
 
-Mesh.Optimize = 1;
-Mesh.OptimizeNetgen = 1;
+Mesh.Optimize = 0;
+Mesh.OptimizeNetgen = 0;
 
 //Mesh.Smoothing = 0;
 Mesh.SurfaceFaces = 1;

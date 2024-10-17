@@ -160,8 +160,8 @@ if __name__=="__main__":
         #print "Making surface for",filename_input
     else:
         filename_input="ARVC004-LVEndo-Frame_1.txt"
-        print "Usage: "+sys.argv[0]+" filename_input"
-        print "Defaults to",filename_input
+        print ("Usage: "+sys.argv[0]+" filename_input")
+        print ("Defaults to",filename_input)
  
     file_namebase, file_extension = os.path.splitext(filename_input)
     filename_output = ".".join([file_namebase,"ply"])
@@ -192,7 +192,7 @@ if __name__=="__main__":
  
     # Testing input data
     if not n_slices*n_per_slice == len(points):
-        print "OOPS: Not same number of points per slice!!! (Exit program)"
+        print ("OOPS: Not same number of points per slice!!! (Exit program)")
         sys.exit()
  
     # Make triangle surface

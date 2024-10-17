@@ -15,12 +15,9 @@ function SaveMhd(subjNo, filen)
 global SEG % Comes from global workspace
 localSEG = SEG{subjNo}; 
 
-localSEG
-
 % For further processing purposes, values are changed to maximum 8-bit value
 % Preparing binary array
 % resVector = [localSEG.ResolutionX localSEG.ResolutionY 1];
-
 pixSize = int16([localSEG.XSize, localSEG.YSize, localSEG.ZSize]);%.*resVector);
 pix=zeros(pixSize);
 
@@ -31,7 +28,7 @@ temp(:)=temp(:);
 z=max(temp(:,3));
 
 for i=1:localSEG.ZSize
-    temp1=find(temp(:,3)<=z);% mudei aqui para pegar todos os pontos de fibrose marcada
+    temp1=find(temp(:,3)<=z);
     [c,~]=size(temp1);
     for j=1:c
         x=temp(temp1(j),1);

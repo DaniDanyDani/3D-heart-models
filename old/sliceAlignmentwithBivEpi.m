@@ -17,8 +17,6 @@
 
 function SEG_shift = sliceAlignmentwithBivEpi(SEG,RVyes,IsFullTemporal)
 
-SEG
-
 sizen=size(SEG.EndoX);
 K = sizen(1, 1);
 N = sizen(1, 2);

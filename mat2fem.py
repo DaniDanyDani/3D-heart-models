@@ -39,7 +39,7 @@ def run_matlab(nr_errors,err_list):
 
 #if an error occured in matlab, this function removes the error file(s) and restarts
 def remove_error(N2,nr_errors,err_list): 
-		error=(N2+nr_errors*2)/2+1
+		error=int((N2+nr_errors*2)/2+1)
 		err_path='{}Patient_{}.mat'.format(mat_seg,error)
 		os.remove(err_path)		
 		nr_errors+=1
