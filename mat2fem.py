@@ -26,7 +26,7 @@ conv=root+'/Convertion_Process'
 scar=root+'/Scar_Process'
 script=root+'/scripts/'
 program=os.getenv('HOME')+'/Programs'
-gmsh='/usit/abel/u1/vildenst/Programs/gmsh/build/gmsh' 
+gmsh='/home/daniel/Programs/gmsh/build/gmsh' 
 
 """ FUNCTIONS PART 1: MATLAB SLICE ALIGNMENT """
 #running the matlab script alignAll.m
@@ -153,8 +153,7 @@ def mergevtk(i,msh_srf,vtk_srf):
 	msh='{}/Patient_{}.msh'.format(msh_srf,i)
 	out='{}/Patient_{}.out.txt'.format(msh_srf,i)
 	biv_mesh='{}/scripts/biv_mesh.geo'.format(root)
-	os.system('{} -3 {} -merge {} {} {} -o {} >& {}'.format(
-		gmsh, lv_endo, rv_endo, rv_epi, biv_mesh, msh, out))
+	os.system('{} -3 {} -merge {} {} {} -o {} 2>&1 {}'.format(gmsh, lv_endo, rv_endo, rv_epi, biv_mesh, msh, out))
 
 #function for generating pts, elem files from msh files
 def write_fem(input_file,outputname):
@@ -209,8 +208,8 @@ def includescar(i,patient_path):
 	volout='{}/Patient_{}_scarvol.out.txt'.format(msh_srf,i)
 
 	#generate Finite element surface and volume of scar
-	os.system('{} -3 {} {} -o {} >& {}'.format(gmsh,scarvtk,surf_geo,surfmsh,surfout))
-	os.system('{} -3 {} {} -o {} >& {}'.format(gmsh,scarvtk,vol_geo,volmsh,volout))
+	os.system('{} -3 {} {} -o {} 2>&1 {}'.format(gmsh,scarvtk,surf_geo,surfmsh,surfout))
+	os.system('{} -3 {} {} -o {} 2>&1 {}'.format(gmsh,scarvtk,vol_geo,volmsh,volout))
 
 	regfile='nr_regions_Patient_{}.dat'.format(i)
 	if enough_scar(volmsh):
