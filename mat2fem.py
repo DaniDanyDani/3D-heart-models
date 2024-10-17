@@ -159,13 +159,24 @@ def mergevtk(i,msh_srf,vtk_srf):
 def write_fem(input_file,outputname):
 	os.system('python {}write_fem.py {} {}'.format(script,input_file,outputname))
 
+# def enough_scar(scarvol):
+# 	counter=0
+# 	for line in open(scarvol).xreadlines():
+# 		counter+=1
+# 		if counter>3000:
+# 			return True
+# 	return False
+
+
 def enough_scar(scarvol):
-	counter=0
-	for line in open(scarvol).xreadlines():
-		counter+=1
-		if counter>3000:
-			return True
-	return False
+    counter = 0
+    with open(scarvol) as file:
+        for line in file:
+            counter += 1
+            if counter > 3000:
+                return True
+    return False
+
 
 def incorporate_scar(i,surfmsh,volmsh,patient_path,regfile):
 	#generate CARP files of scar and move to scarFiles
