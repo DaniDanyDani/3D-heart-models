@@ -127,15 +127,15 @@ def create_pts_lists(lv_pts,lv_nr,z_min,z_max):
 	height=z_max-z_min
 	for coord in lv_pts:
 		if abs(coord[-1]-(height/4.+z_min))<threshold:
-	 		nr_13to16.append(lv_nr[count])
-	 		coord_13to16.append(coord)
-	 	if abs(z_min+height/2.-coord[-1])<threshold:
+			nr_13to16.append(lv_nr[count])
+			coord_13to16.append(coord)
+		if abs(z_min+height/2.-coord[-1])<threshold:
 			nr_7to12.append(lv_nr[count])
-	 		coord_7to12.append(coord)
-	 	if abs(z_min+height*3/4.-coord[-1])<threshold:
-	 		nr_1to6.append(lv_nr[count])
-	 		coord_1to6.append(coord)
-	 	count+=1
+			coord_7to12.append(coord)
+		if abs(z_min+height*3/4.-coord[-1])<threshold:
+			nr_1to6.append(lv_nr[count])
+			coord_1to6.append(coord)
+			count+=1
 
 def set_node(point,dist_lst,node_nr,nr_lst,min_max="min"):
 	dist=np.sqrt(np.sum((np.asarray(point)-np.asarray(dist_lst))**2,axis=1))

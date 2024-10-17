@@ -72,7 +72,16 @@ def nearest_neighbor(surf_pts,vol_pts,region_nr):
 	nearest_neighbor(surf_pts,np.asarray(rem_vol),region_nr+1)
 
 surf_pts,vol_pts=first()
-scale=int(round(len(vol_pts)/(5*len(surf_pts))))
+
+# scale=int(round(len(vol_pts)/(5*len(surf_pts))))
+scale = max(1, int(round(len(vol_pts) / (5 * len(surf_pts)))))
+
+
+print(f'\n{len(vol_pts)/(5*len(surf_pts))}\n')
+print(f'\n{surf_pts=}\n')
+print(f'\n{scale=}\n')
+print(f'\n{vol_pts=}\n')
+
 nearest_neighbor(surf_pts,vol_pts,2)
 out_done.close()
 

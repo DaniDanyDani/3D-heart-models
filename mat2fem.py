@@ -153,7 +153,8 @@ def mergevtk(i,msh_srf,vtk_srf):
 	msh='{}/Patient_{}.msh'.format(msh_srf,i)
 	out='{}/Patient_{}.out.txt'.format(msh_srf,i)
 	biv_mesh='{}/scripts/biv_mesh.geo'.format(root)
-	os.system('{} -3 {} -merge {} {} {} -o {} 2>&1 {}'.format(gmsh, lv_endo, rv_endo, rv_epi, biv_mesh, msh, out))
+	# os.system('{} -3 {} -merge {} {} {} -o {} 2>&1 {}'.format(gmsh, lv_endo, rv_endo, rv_epi, biv_mesh, msh, out))
+	os.system(f'{gmsh} -3 {lv_endo} -merge {rv_endo} {rv_epi} {biv_mesh} -o {msh} > {out} 2>&1')
 
 #function for generating pts, elem files from msh files
 def write_fem(input_file,outputname):
