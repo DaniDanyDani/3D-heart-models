@@ -40,10 +40,23 @@ print('Done reading gmsh file...')
 def partition(points,dim,rounds):
 	new_lst=[]
 	rounds+=1
+
+	print('tá aqui dentro')
+	# for lst in points:
+	# 	pts_array=np.asarray(lst)
+	# 	mean=np.mean(pts_array,axis=0)
+	# 	reference=mean[dim]
 	for lst in points:
-		pts_array=np.asarray(lst)
-		mean=np.mean(pts_array,axis=0)
-		reference=mean[dim]
+		# print(f"Processando lista de tamanho {len(lst)}")
+		if len(lst) == 0:
+			# print("Lista vazia, pulando...")
+			continue
+		pts_array = np.asarray(lst)
+		# print(f"Tamanho do array: {pts_array.shape}")
+		mean = np.mean(pts_array, axis=0)
+		# print(f"Média calculada: {mean}")
+		reference = mean[dim]
+
 		left=[]
 		right=[]
 		for coord in lst:
@@ -63,9 +76,8 @@ def partition(points,dim,rounds):
 		return new_lst
 
 tmp=[]
-tmp.append(pts_lst)		
+tmp.append(pts_lst)
 new=partition(tmp,2,0)
-print('partition done')
 reorder=list(itertools.chain(*new))
 
 

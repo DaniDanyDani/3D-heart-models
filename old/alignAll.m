@@ -18,7 +18,8 @@ IsFullTemporal = 0;
 filename = cell(noSubjects,1);
 SEGold = cell(noSubjects,1);
 SEG_shift = cell(noSubjects,1);
-SEG_shift_clean = cell(noSubjects,1);SEG_shift_resampled = cell(noSubjects,1);
+SEG_shift_clean = cell(noSubjects,1);
+SEG_shift_resampled = cell(noSubjects,1);
 
 global SEG;
 SEG = cell(noSubjects,1);
@@ -45,7 +46,8 @@ end
 disp('Loading files...');
 for i = Subjects
     tmp = load(filename{i},'-mat','setstruct');
-    SEGold{i} = tmp.setstruct; 
+    % SEGold{i} = tmp.setstruct;
+    SEGold{i} = tmp.setstruct(1);  
 end
 clear tmp
 
@@ -84,16 +86,8 @@ for i = Subjects(2:end)
         SEG_shift_resampled{i},IsFullTemporal);
 end
 
-if ~isstruct(SEG_shift_resampled)
-    error('SEG deve ser uma estrutura. Tipo atual: %s', class(SEG));
-end
-
 % Finally, change resolution for Subject1 for good
 SEG{1} = ChangeReswithBivEpi(SEG_shift_resampled{1});
-
-if ~isstruct(SEG)
-    error('SEG deve ser uma estrutura. Tipo atual: %s', class(SEG));
-end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Save all to new files

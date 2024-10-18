@@ -324,7 +324,6 @@ if os.path.isfile('{}/Patient_{}_scar.vtk'.format(vtk_srf,i)):	#patient exists
 	fix_vtx(i,patient_path)
 		
 
-		
 
 os.system('echo PART 3 DONE: GENERATED MODELS AND NECESSARY CARP FILES')
 os.system('echo ==========PROCESS COMPLETE=============')
