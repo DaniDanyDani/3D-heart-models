@@ -73,8 +73,8 @@ def nearest_neighbor(surf_pts,vol_pts,region_nr):
 
 surf_pts,vol_pts=first()
 
-# scale=int(round(len(vol_pts)/(5*len(surf_pts))))
-scale = max(1, int(round(len(vol_pts) / (5 * len(surf_pts)))))
+scale=int(round(len(vol_pts)/(5*len(surf_pts))))
+# scale = max(1, int(round(len(vol_pts) / (5 * len(surf_pts)))))
 
 
 print(f'\n{len(vol_pts)/(5*len(surf_pts))}\n')

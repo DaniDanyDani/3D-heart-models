@@ -1,0 +1,100 @@
+Info    : Running '/home/daniel/Programs/gmsh/build/gmsh -3 /home/daniel/3D-heart-models/Files/Data-17.10-22.04/Patient_1/vtkFiles/Patient_1-LVEndo-Frame_1.vtk -merge /home/daniel/3D-heart-models/Files/Data-17.10-22.04/Patient_1/vtkFiles/Patient_1-RVEndo-Frame_1.vtk /home/daniel/3D-heart-models/Files/Data-17.10-22.04/Patient_1/vtkFiles/Patient_1-RVEpi-Frame_1.vtk /home/daniel/3D-heart-models/scripts/biv_mesh.geo -o /home/daniel/3D-heart-models/Files/Data-17.10-22.04/Patient_1/mshFiles/Patient_1.msh' [Gmsh 2.13.1, 1 node, max. 1 thread]
+Info    : Started on Thu Oct 17 22:04:53 2024
+Info    : Reading '/home/daniel/3D-heart-models/Files/Data-17.10-22.04/Patient_1/vtkFiles/Patient_1-LVEndo-Frame_1.vtk'...
+Info    : Reading 735 points
+Info    : Reading 1326 polygons
+Info    : Done reading '/home/daniel/3D-heart-models/Files/Data-17.10-22.04/Patient_1/vtkFiles/Patient_1-LVEndo-Frame_1.vtk'
+Info    : Reading '/home/daniel/3D-heart-models/Files/Data-17.10-22.04/Patient_1/vtkFiles/Patient_1-RVEndo-Frame_1.vtk'...
+Info    : Reading 783 points
+Info    : Reading 1326 polygons
+Info    : Done reading '/home/daniel/3D-heart-models/Files/Data-17.10-22.04/Patient_1/vtkFiles/Patient_1-RVEndo-Frame_1.vtk'
+Info    : Reading '/home/daniel/3D-heart-models/Files/Data-17.10-22.04/Patient_1/vtkFiles/Patient_1-RVEpi-Frame_1.vtk'...
+Info    : Reading 805 points
+Info    : Reading 1482 polygons
+Info    : Done reading '/home/daniel/3D-heart-models/Files/Data-17.10-22.04/Patient_1/vtkFiles/Patient_1-RVEpi-Frame_1.vtk'
+Info    : Reading '/home/daniel/3D-heart-models/scripts/biv_mesh.geo'...
+Info    : Creating topology from mesh...
+Info    : Removing duplicate mesh vertices...
+Info    : Found 80 duplicate vertices 
+Info    : Removed 80 duplicate mesh vertices
+Info    : Done removing duplicate mesh vertices
+Info    : Creating the geometry of discrete curves
+Info    : Done creating topology from mesh (0.026871 s)
+Info    : Done reading '/home/daniel/3D-heart-models/scripts/biv_mesh.geo'
+Info    : Finalized high order topology of periodic connections
+Info    : Meshing 1D...
+Info    : Meshing curve 4 (Compound curve)
+Info    : Meshing curve 5 (Compound curve)
+Info    : Meshing curve 6 (Compound curve)
+Info    : Done meshing 1D (0.003907 s)
+Info    : Meshing 2D...
+Info    : Meshing surface 11 (Plane, Frontal)
+Info    : Meshing surface 7 (Compound surface, Frontal)
+Info    : Parametrizing surface 7 with 'convex map'
+Info    : Meshing surface 8 (Compound surface, Frontal)
+Info    : Parametrizing surface 8 with 'convex map'
+Info    : Meshing surface 9 (Compound surface, Frontal)
+Info    : Parametrizing surface 9 with 'convex map'
+Info    : Done meshing 2D (0.593015 s)
+Info    : Meshing 3D...
+Info    : Delaunay Meshing 1 volumes with 1 connected components
+Info    : Meshing volume 13 (Delaunay)
+nbvertices_filler =0
+Delaunizing vertices...
+Delaunay seconds:  0.051136
+Creating surface mesh ...
+Surface mesh seconds:  0.028124
+Recovering boundaries...
+Boundary recovery seconds:  0.045811
+Removing exterior tetrahedra ...
+Exterior tets removal seconds:  0.019895
+Recovering Delaunayness...
+Delaunay recovery seconds:  0.022266
+Optimizing mesh...
+Optimization seconds:  0.005633
+
+Writing nodes.
+Writing elements.
+Writing faces.
+Writing edges.
+
+Output seconds:  0.021356
+Total running seconds:  0.196803
+
+Statistics:
+
+  Input points: 6657
+  Input facets: 13310
+  Input segments: 19965
+  Input holes: 0
+  Input regions: 0
+
+  Mesh points: 6657
+  Mesh tetrahedra: 20587
+  Mesh faces: 47829
+  Mesh edges: 33898
+  Mesh faces on exterior boundary: 13310
+  Mesh edges on exterior boundary: 19965
+  Mesh faces on input facets: 13310
+  Mesh edges on input segments: 19965
+
+Info    : 6657 points 33898 edges and 13310 faces in the initial mesh
+Info    : Found region 13
+Info    : 0 points created - Worst tet radius is 3.14203 (PTS removed 0 0)
+Info    : 3D point insertion terminated (11290 points created):
+Info    :  - 0 Delaunay cavities modified for star shapeness
+Info    :  - 4 points could not be inserted
+Info    :  - 36210 tetrahedra created in 0.209327 sec. (172982 tets/sec.)
+Info    : Done meshing 3D (0.751909 s)
+Warning : Could not orient normal of surface 11
+Info    : 11290 vertices 54166 elements
+Warning : ------------------------------
+Warning : Mesh generation error summary
+Warning :     1 warning
+Warning :     0 errors
+Warning : Check the full log for details
+Warning : ------------------------------
+Info    : Writing '/home/daniel/3D-heart-models/Files/Data-17.10-22.04/Patient_1/mshFiles/Patient_1.msh'...
+Info    : Done writing '/home/daniel/3D-heart-models/Files/Data-17.10-22.04/Patient_1/mshFiles/Patient_1.msh'
+Info    : Stopped on Thu Oct 17 22:04:55 2024
+Info    : No current model available: creating one
