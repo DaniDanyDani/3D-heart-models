@@ -41,7 +41,6 @@ def partition(points,dim,rounds):
 	new_lst=[]
 	rounds+=1
 
-	print('tá aqui dentro')
 	# for lst in points:
 	# 	pts_array=np.asarray(lst)
 	# 	mean=np.mean(pts_array,axis=0)

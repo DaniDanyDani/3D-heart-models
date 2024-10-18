@@ -120,15 +120,7 @@ heart_pts,line_nr=exclude_values()
 scar_pts,region_nr,nr_regions=get_scar_pts()
 #scale=15
 
-print(f'\n{heart_pts=}\n')
-print(f'\n{scar_pts=}\n')
-print(f'\n{line_nr=}\n')
-print(f'\n{region_nr=}\n')
-print(f'\n{nr_regions=}\n')
-
 scale=len(heart_pts)/float(len(scar_pts))
-
-print(f'\n{scale=}\n')
 
 scale=int(round(scale))
 scale = max(1, scale)

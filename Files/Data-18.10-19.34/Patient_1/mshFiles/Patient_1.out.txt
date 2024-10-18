@@ -1,17 +1,17 @@
-Info    : Running '/home/daniel/Programs/gmsh/build/gmsh -3 /home/daniel/3D-heart-models/Files/Data-18.10-17.19/Patient_1/vtkFiles/Patient_1-LVEndo-Frame_1.vtk -merge /home/daniel/3D-heart-models/Files/Data-18.10-17.19/Patient_1/vtkFiles/Patient_1-RVEndo-Frame_1.vtk /home/daniel/3D-heart-models/Files/Data-18.10-17.19/Patient_1/vtkFiles/Patient_1-RVEpi-Frame_1.vtk /home/daniel/3D-heart-models/scripts/biv_mesh.geo -o /home/daniel/3D-heart-models/Files/Data-18.10-17.19/Patient_1/mshFiles/Patient_1.msh' [Gmsh 2.13.1, 1 node, max. 1 thread]
-Info    : Started on Fri Oct 18 17:19:19 2024
-Info    : Reading '/home/daniel/3D-heart-models/Files/Data-18.10-17.19/Patient_1/vtkFiles/Patient_1-LVEndo-Frame_1.vtk'...
+Info    : Running '/home/daniel/Programs/gmsh/build/gmsh -3 /home/daniel/3D-heart-models/Files/Data-18.10-19.34/Patient_1/vtkFiles/Patient_1-LVEndo-Frame_1.vtk -merge /home/daniel/3D-heart-models/Files/Data-18.10-19.34/Patient_1/vtkFiles/Patient_1-RVEndo-Frame_1.vtk /home/daniel/3D-heart-models/Files/Data-18.10-19.34/Patient_1/vtkFiles/Patient_1-RVEpi-Frame_1.vtk /home/daniel/3D-heart-models/scripts/biv_mesh.geo -o /home/daniel/3D-heart-models/Files/Data-18.10-19.34/Patient_1/mshFiles/Patient_1.msh' [Gmsh 2.13.1, 1 node, max. 1 thread]
+Info    : Started on Fri Oct 18 19:35:00 2024
+Info    : Reading '/home/daniel/3D-heart-models/Files/Data-18.10-19.34/Patient_1/vtkFiles/Patient_1-LVEndo-Frame_1.vtk'...
 Info    : Reading 735 points
 Info    : Reading 1326 polygons
-Info    : Done reading '/home/daniel/3D-heart-models/Files/Data-18.10-17.19/Patient_1/vtkFiles/Patient_1-LVEndo-Frame_1.vtk'
-Info    : Reading '/home/daniel/3D-heart-models/Files/Data-18.10-17.19/Patient_1/vtkFiles/Patient_1-RVEndo-Frame_1.vtk'...
+Info    : Done reading '/home/daniel/3D-heart-models/Files/Data-18.10-19.34/Patient_1/vtkFiles/Patient_1-LVEndo-Frame_1.vtk'
+Info    : Reading '/home/daniel/3D-heart-models/Files/Data-18.10-19.34/Patient_1/vtkFiles/Patient_1-RVEndo-Frame_1.vtk'...
 Info    : Reading 783 points
 Info    : Reading 1326 polygons
-Info    : Done reading '/home/daniel/3D-heart-models/Files/Data-18.10-17.19/Patient_1/vtkFiles/Patient_1-RVEndo-Frame_1.vtk'
-Info    : Reading '/home/daniel/3D-heart-models/Files/Data-18.10-17.19/Patient_1/vtkFiles/Patient_1-RVEpi-Frame_1.vtk'...
+Info    : Done reading '/home/daniel/3D-heart-models/Files/Data-18.10-19.34/Patient_1/vtkFiles/Patient_1-RVEndo-Frame_1.vtk'
+Info    : Reading '/home/daniel/3D-heart-models/Files/Data-18.10-19.34/Patient_1/vtkFiles/Patient_1-RVEpi-Frame_1.vtk'...
 Info    : Reading 805 points
 Info    : Reading 1482 polygons
-Info    : Done reading '/home/daniel/3D-heart-models/Files/Data-18.10-17.19/Patient_1/vtkFiles/Patient_1-RVEpi-Frame_1.vtk'
+Info    : Done reading '/home/daniel/3D-heart-models/Files/Data-18.10-19.34/Patient_1/vtkFiles/Patient_1-RVEpi-Frame_1.vtk'
 Info    : Reading '/home/daniel/3D-heart-models/scripts/biv_mesh.geo'...
 Info    : Creating topology from mesh...
 Info    : Removing duplicate mesh vertices...
@@ -19,14 +19,14 @@ Info    : Found 80 duplicate vertices
 Info    : Removed 80 duplicate mesh vertices
 Info    : Done removing duplicate mesh vertices
 Info    : Creating the geometry of discrete curves
-Info    : Done creating topology from mesh (0.0175 s)
+Info    : Done creating topology from mesh (0.01828 s)
 Info    : Done reading '/home/daniel/3D-heart-models/scripts/biv_mesh.geo'
 Info    : Finalized high order topology of periodic connections
 Info    : Meshing 1D...
 Info    : Meshing curve 4 (Compound curve)
 Info    : Meshing curve 5 (Compound curve)
 Info    : Meshing curve 6 (Compound curve)
-Info    : Done meshing 1D (0.002376 s)
+Info    : Done meshing 1D (0.002788 s)
 Info    : Meshing 2D...
 Info    : Meshing surface 11 (Plane, Frontal)
 Info    : Meshing surface 7 (Compound surface, Frontal)
@@ -35,31 +35,31 @@ Info    : Meshing surface 8 (Compound surface, Frontal)
 Info    : Parametrizing surface 8 with 'convex map'
 Info    : Meshing surface 9 (Compound surface, Frontal)
 Info    : Parametrizing surface 9 with 'convex map'
-Info    : Done meshing 2D (0.476379 s)
+Info    : Done meshing 2D (0.445366 s)
 Info    : Meshing 3D...
 Info    : Delaunay Meshing 1 volumes with 1 connected components
 Info    : Meshing volume 13 (Delaunay)
 nbvertices_filler =0
 Delaunizing vertices...
-Delaunay seconds:  0.039991
+Delaunay seconds:  0.042741
 Creating surface mesh ...
-Surface mesh seconds:  0.01558
+Surface mesh seconds:  0.01603
 Recovering boundaries...
-Boundary recovery seconds:  0.029905
+Boundary recovery seconds:  0.04672
 Removing exterior tetrahedra ...
-Exterior tets removal seconds:  0.012399
+Exterior tets removal seconds:  0.014105
 Recovering Delaunayness...
-Delaunay recovery seconds:  0.014648
+Delaunay recovery seconds:  0.017392
 Optimizing mesh...
-Optimization seconds:  0.004299
+Optimization seconds:  0.006297
 
 Writing nodes.
 Writing elements.
 Writing faces.
 Writing edges.
 
-Output seconds:  0.01123
-Total running seconds:  0.129576
+Output seconds:  0.012259
+Total running seconds:  0.159722
 
 Statistics:
 
@@ -84,8 +84,8 @@ Info    : 0 points created - Worst tet radius is 3.14203 (PTS removed 0 0)
 Info    : 3D point insertion terminated (11290 points created):
 Info    :  - 0 Delaunay cavities modified for star shapeness
 Info    :  - 4 points could not be inserted
-Info    :  - 36210 tetrahedra created in 0.192489 sec. (188114 tets/sec.)
-Info    : Done meshing 3D (0.554541 s)
+Info    :  - 36210 tetrahedra created in 0.185415 sec. (195291 tets/sec.)
+Info    : Done meshing 3D (0.606027 s)
 Warning : Could not orient normal of surface 11
 Info    : 11290 vertices 54166 elements
 Warning : ------------------------------
@@ -94,7 +94,7 @@ Warning :     1 warning
 Warning :     0 errors
 Warning : Check the full log for details
 Warning : ------------------------------
-Info    : Writing '/home/daniel/3D-heart-models/Files/Data-18.10-17.19/Patient_1/mshFiles/Patient_1.msh'...
-Info    : Done writing '/home/daniel/3D-heart-models/Files/Data-18.10-17.19/Patient_1/mshFiles/Patient_1.msh'
-Info    : Stopped on Fri Oct 18 17:19:20 2024
+Info    : Writing '/home/daniel/3D-heart-models/Files/Data-18.10-19.34/Patient_1/mshFiles/Patient_1.msh'...
+Info    : Done writing '/home/daniel/3D-heart-models/Files/Data-18.10-19.34/Patient_1/mshFiles/Patient_1.msh'
+Info    : Stopped on Fri Oct 18 19:35:01 2024
 Info    : No current model available: creating one
