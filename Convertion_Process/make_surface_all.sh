@@ -13,7 +13,7 @@ for f in *.txt
 		'./ConvertFile/build/ConvertFile' "${f%.txt}".ply "${f%.txt}".vtk
 		mv "${f%.txt}".vtk ./Data/vtkFiles
 		mv "${f%.txt}".ply ./Data/plyFiles
-	    	mv $f ./Data/txtFiles
+	    mv $f ./Data/txtFiles
 done
 
 
