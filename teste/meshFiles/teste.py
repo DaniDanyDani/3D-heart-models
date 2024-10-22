@@ -1,35 +1,36 @@
 import gmsh
-import sys
 
-# Inicializa o Gmsh
+# Inicializa o GMSH
 gmsh.initialize()
 
-# Carrega os dois arquivos .msh (o volume do coração e o volume da fibrose)
+# Carrega os dois arquivos .msh (volume do coração e da cicatriz)
 gmsh.merge("/home/daniel/3D-heart-models/teste/meshFiles/Patient_1_scarvol.msh")
 gmsh.merge("/home/daniel/3D-heart-models/teste/meshFiles/Patient_1.msh")
 
-# Criar o novo modelo no Gmsh e definir volumes
-gmsh.model.add("boolean_operation")
-
-# Extrai as entidades físicas dos dois arquivos mesh
-entities_heart = gmsh.model.getEntities(13)  # volume = 3
-entities_scar = gmsh.model.getEntities(3)
-
-# Realizar a operação Boolean Difference: subtraindo a fibrose do coração
-vol_heart = entities_heart[0][1]  # Volume do coração
-vol_scar = entities_scar[0][1]    # Volume da fibrose
-
-# BooleanDifference: Subtrai a fibrose do coração
-gmsh.model.occ.booleanDifference([(3, vol_heart)], [(3, vol_scar)])
-
-# Sincroniza para garantir que as mudanças são aplicadas
+# Sincroniza o modelo
 gmsh.model.occ.synchronize()
 
-# Gerar a malha novamente para o novo volume
+# Obtém as entidades físicas (volumes) do coração e da cicatriz
+entities_heart = gmsh.model.getEntities(3)  # Volume = 3
+entities_scar = gmsh.model.getEntities(3)
+
+# Define os volumes
+vol_heart = entities_heart[0][1]  # Volume do coração
+vol_scar = entities_scar[1][1]    # Volume da cicatriz
+
+print(f'{vol_heart=}')
+print(f'{vol_scar=}')
+
+gmsh.model.occ.booleanDifference([(3, vol_heart)], [(3, vol_scar)])
+
+# Sincroniza as operações
+gmsh.model.occ.synchronize()
+
+# Gera a nova malha para o volume modificado
 gmsh.model.mesh.generate(3)
 
-# Salvar o novo arquivo mesh resultante
-gmsh.write("new_patient_model_with_hole.msh")
+# Salva o novo arquivo mesh
+gmsh.write("new_patient_model_without_scar.msh")
 
-# Finaliza o Gmsh
+# Finaliza o GMSH
 gmsh.finalize()
