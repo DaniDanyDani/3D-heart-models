@@ -19,6 +19,8 @@ surf=root+'/Files/'+Date+'/'+patname
 vtk_srf=surf+'/vtkFiles'
 msh_srf=surf+'/mshFiles'
 scar_srf=surf+'/scarFiles'
+temp_srf=root+'/tempFiles'
+stl_srf=temp_srf+'/stlFiles'
 vtxpath=surf+'/PreFiberFiles'
 pre_fem=root+'/FEM/'+Date
 fem=root+'/FEM/'+Date+'/'+patname
@@ -150,11 +152,25 @@ def mergevtk(i,msh_srf,vtk_srf):
 	lv_endo='{}/Patient_{}-LVEndo-Frame_1.vtk'.format(vtk_srf,i)
 	rv_endo='{}/Patient_{}-RVEndo-Frame_1.vtk'.format(vtk_srf,i)
 	rv_epi='{}/Patient_{}-RVEpi-Frame_1.vtk'.format(vtk_srf,i)
+	scar_vtk='{}/Patient_{}_scar.vtk'.format(vtk_srf,i)
 	msh='{}/Patient_{}.msh'.format(msh_srf,i)
+	msh_srf_heart='{}/Patient_{}_surf.msh'.format(msh_srf,i)
+	msh_heart='{}/Patient_{}_model.msh'.format(msh_srf,i)
+	stl_scar='{}/Patient_scar.stl'.format(stl_srf,i)
 	out='{}/Patient_{}.out.txt'.format(msh_srf,i)
+	biv_mesh_heart='{}/scripts/biv_mesh_teste.geo'.format(root)
 	biv_mesh='{}/scripts/biv_mesh.geo'.format(root)
+	biv_msh='{}/scripts/biv_msh.geo'.format(root)
+	biv_stl_scar='/home/daniel/3D-heart-models/scripts/biv_stl_scar.geo'
 	os.system('{} -3 {} -merge {} {} {} -o {} 2>&1 {}'.format(gmsh, lv_endo, rv_endo, rv_epi, biv_mesh, msh, out))
-	# os.system(f'{gmsh} -3 {lv_endo} -merge {rv_endo} {rv_epi} {scar} {biv_mesh} -o {msh} > {out} 2>&1')
+	
+	# Gerando o .msh com as superfícies do coração e usando merge na fibrose pra gerar o modelo: -------------------------
+	os.system('{} -3 {} {} -o {}'.format(gmsh, scar_vtk, biv_stl_scar, stl_scar))
+	os.system('{} -3 {} -merge {} {} {} -o {}'.format(gmsh, lv_endo, rv_endo, rv_epi, biv_mesh_heart, msh_srf_heart))
+	os.system('{} -3 {} -merge {} -o {}'.format(gmsh, msh_srf_heart, biv_msh, msh_heart))
+	# ----------------------------------------------------- Tá dando certo, mas preciso conferir
+
+
 
 #function for generating pts, elem files from msh files
 def write_fem(input_file,outputname):
@@ -332,3 +348,5 @@ os.system('echo All scar generation files are stored in Files/{}/{}/scarFiles'.f
 os.system('echo All pre-fiber orientation files are stored in Files/{}/{}/PreFiberFiles'.format(Date,patname))
 os.system('echo All CARP files are stored in FEM/{}/{}'.format(Date,patname))
 os.system('echo =======================================')
+
+
