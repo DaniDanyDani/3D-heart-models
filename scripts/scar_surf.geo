@@ -13,4 +13,3 @@ Mesh.SurfaceFaces = 1;
 
 Surface Loop(2)={1};
 
-

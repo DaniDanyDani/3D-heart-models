@@ -332,6 +332,3 @@ os.system('echo All scar generation files are stored in Files/{}/{}/scarFiles'.f
 os.system('echo All pre-fiber orientation files are stored in Files/{}/{}/PreFiberFiles'.format(Date,patname))
 os.system('echo All CARP files are stored in FEM/{}/{}'.format(Date,patname))
 os.system('echo =======================================')
-
-os.system("echo TENTATIVA FALHA DE MISTURAR TODOS OS TRECOS")
-os.system("python /home/daniel/3D-heart-models/teste/meshFiles/teste.py")

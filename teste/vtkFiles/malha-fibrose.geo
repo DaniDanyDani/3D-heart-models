@@ -11,10 +11,10 @@ Coherence Mesh;
 
 RefineMesh;
 
-CreateTopology;
+// CreateTopology;
 
 
-CreateGeometry;
+// CreateGeometry;
 
 Merge "Patient_1_scar.vtk";
 

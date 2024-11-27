@@ -1,36 +1,61 @@
-import gmsh
+import os,glob,shutil,sys,re
 
-# Inicializa o GMSH
-gmsh.initialize()
+root='/home/daniel/3D-heart-models'
 
-# Carrega os dois arquivos .msh (volume do coração e da cicatriz)
-gmsh.merge("/home/daniel/3D-heart-models/teste/meshFiles/Patient_1_scarvol.msh")
-gmsh.merge("/home/daniel/3D-heart-models/teste/meshFiles/Patient_1.msh")
+surf = '/home/daniel/3D-heart-models/Files/Data-21.11-13.12/Patient_1'
+vtk_srf=surf+'/vtkFiles'
+msh_srf='/home/daniel/3D-heart-models/teste/meshFiles'
+stl_files = '/home/daniel/3D-heart-models/teste/stlFiles'
+scar_srf=surf+'/scarFiles'
+gmsh='/home/daniel/Programs/gmsh/build/gmsh' 
 
-# Sincroniza o modelo
-gmsh.model.occ.synchronize()
+i = 1
+lv_endo='{}/Patient_{}-LVEndo-Frame_1.vtk'.format(vtk_srf,i)
+rv_endo='{}/Patient_{}-RVEndo-Frame_1.vtk'.format(vtk_srf,i)
+rv_epi='{}/Patient_{}-RVEpi-Frame_1.vtk'.format(vtk_srf,i)
+scar='{}/Patient_{}_scar.vtk'.format(vtk_srf, i)
 
-# Obtém as entidades físicas (volumes) do coração e da cicatriz
-entities_heart = gmsh.model.getEntities(3)  # Volume = 3
-entities_scar = gmsh.model.getEntities(3)
 
-# Define os volumes
-vol_heart = entities_heart[0][1]  # Volume do coração
-vol_scar = entities_scar[1][1]    # Volume da cicatriz
+msh='{}/Patient_{}_teste.stl'.format(msh_srf,i)
+msh_scar='{}/Patient_{}_scar_teste.stl'.format(msh_srf, i)
+msh_final='{}/Patient_{}_final_teste.msh'.format(msh_srf, i)
+msh_teste ='/home/daniel/3D-heart-models/Files/Data-21.11-13.12/Patient_1/vtkFiles/teste.msh'
 
-print(f'{vol_heart=}')
-print(f'{vol_scar=}')
+stl_base='{}/base.stl'.format(stl_files, i)
+stl_epi='{}/epi.stl'.format(stl_files, i)
+stl_rv='{}/endoRv.stl'.format(stl_files, i)
+stl_lv='{}/endoLv.stl'.format(stl_files, i)
+stl_scar='{}/scar.stl'.format(stl_files, i)
 
-gmsh.model.occ.booleanDifference([(3, vol_heart)], [(3, vol_scar)])
 
-# Sincroniza as operações
-gmsh.model.occ.synchronize()
+biv_mesh='{}/scripts/biv_mesh.geo'.format(root)
+biv_scar='{}/scripts/scar_vol.geo'.format(root)
+biv_stl='{}/scripts/convert_to_stl.geo'.format(root)
+biv_mesh_scar='{}/scripts/biv_mesh_scar.geo'.format(root)
+biv_mesh_base='{}/scripts/biv_mesh_base.geo'.format(root)
+biv_malha_fibrose='{}/malha-fibrose.geo'.format(stl_files)
+biv_teste='{}/teste.geo'.format('/home/daniel/3D-heart-models/Files/Data-21.11-13.12/Patient_1/vtkFiles/teste.geo')
 
-# Gera a nova malha para o volume modificado
-gmsh.model.mesh.generate(3)
+# Gera os stls:
+os.system('{} -3 {} -merge {} {} {} {} -o {}'.format(gmsh, lv_endo, rv_endo, rv_epi, scar, biv_teste, msh_teste))
 
-# Salva o novo arquivo mesh
-gmsh.write("new_patient_model_without_scar.msh")
 
-# Finaliza o GMSH
-gmsh.finalize()
+
+# os.system('{} -3 {} -merge {} {} {} -o {}'.format(gmsh, lv_endo, rv_endo, rv_epi, biv_mesh_base, stl_base))
+# os.system('{} -3 {} -merge {} -o {}'.format(gmsh, rv_epi, biv_stl, stl_epi))
+# os.system('{} -3 {} -merge {} -o {}'.format(gmsh, rv_endo, biv_stl, stl_rv))
+# os.system('{} -3 {} -merge {} -o {}'.format(gmsh, lv_endo, biv_stl, stl_lv))
+# os.system('{} -3 {} -merge {} -o {}'.format(gmsh, scar, biv_stl, stl_scar))
+
+
+# # Gera o coração
+# os.system('{} -3 {}'.format(gmsh, biv_malha_fibrose))
+
+
+
+# os.system('{} -3 {} -merge {} {} {} -o {}'.format(gmsh, lv_endo, rv_endo, rv_epi, biv_mesh, msh))
+# os.system('{} -3 {} -merge {} -o {}'.format(gmsh, scar, biv_scar, msh_scar))
+# os.system('{} -3 {} -merge {} {} -o {}'.format(gmsh, msh, scar, biv_mesh_scar, msh_final))
+
+
+

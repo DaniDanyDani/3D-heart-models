@@ -3,7 +3,7 @@
 import numpy as np
 import sys,os
 
-os.system("export PYTHONPATH=/cluster/home/vildenst/.local/lib/python2.7/site-packages:$PYTHONPATH") 
+# os.system("export PYTHONPATH=/cluster/home/vildenst/.local/lib/python2.7/site-packages:$PYTHONPATH") 
 import matplotlib as mpl
 mpl.use('Agg')
 import matplotlib.pyplot as plt
