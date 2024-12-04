@@ -158,7 +158,7 @@ def mergevtk(i,msh_srf,vtk_srf):
 	msh_heart='{}/Patient_{}_model.msh'.format(msh_srf,i)
 	stl_scar='{}/Patient_scar.stl'.format(stl_srf,i)
 	out='{}/Patient_{}.out.txt'.format(msh_srf,i)
-	biv_mesh_heart='{}/scripts/biv_mesh_teste.geo'.format(root)
+	biv_mesh_heart='{}/scripts/biv_mesh.geo'.format(root)
 	biv_mesh='{}/scripts/biv_mesh.geo'.format(root)
 	biv_msh='{}/scripts/biv_msh.geo'.format(root)
 	biv_stl_scar='/home/daniel/3D-heart-models/scripts/biv_stl_scar.geo'
