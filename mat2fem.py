@@ -168,8 +168,10 @@ def mergevtk(i,msh_srf,vtk_srf):
 	
 	# Gerando o .msh com as superfícies do coração e usando merge na fibrose pra gerar o modelo: -------------------------
 	os.system('{} -3 {} {} -o {}'.format(gmsh, scar_vtk, biv_stl_scar, stl_scar))
+	os.system('cp {} {}'.format(stl_scar, "/home/daniel/3D-heart-models/tempFiles/stlFiles/Patient_scar.stl"))
 	os.system('{} -3 {} -merge {} {} {} -o {}'.format(gmsh, lv_endo, rv_endo, rv_epi, biv_mesh_heart, msh_srf_heart))
 	os.system('{} -3 {} -merge {} -o {}'.format(gmsh, msh_srf_heart, biv_msh, msh_heart))
+	os.system('rm {}'.format("/home/daniel/3D-heart-models/tempFiles/stlFiles/Patient_scar.stl"))
 	# ----------------------------------------------------- Tá dando certo, mas preciso conferir
 
 
