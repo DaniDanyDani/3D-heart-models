@@ -1,0 +1,687 @@
+CMakeFiles/ScarProcessing.dir/ScarProcessing.cxx.o: \
+ /home/daniel/3D-heart-models/Scar_Process/ScarProcessing/ScarProcessing.cxx \
+ /usr/include/stdc-predef.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkFixedArray.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkMacro.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkWin32Header.h \
+ /home/daniel/Programs/ITK/bin/Modules/Core/Common/itkConfigure.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itk_compiler_detection.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/compilers/ITK_COMPILER_INFO_GNU_CXX.h \
+ /home/daniel/Programs/ITK/bin/Modules/Core/Common/ITKCommonExport.h \
+ /usr/include/c++/9/typeinfo /usr/include/c++/9/bits/exception.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
+ /usr/include/features.h /usr/include/features-time64.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/bits/timesize.h \
+ /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/long-double.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
+ /usr/include/c++/9/bits/hash_bytes.h /usr/include/c++/9/string \
+ /usr/include/c++/9/bits/stringfwd.h /usr/include/c++/9/bits/memoryfwd.h \
+ /usr/include/c++/9/bits/char_traits.h \
+ /usr/include/c++/9/bits/stl_algobase.h \
+ /usr/include/c++/9/bits/functexcept.h \
+ /usr/include/c++/9/bits/exception_defines.h \
+ /usr/include/c++/9/bits/cpp_type_traits.h \
+ /usr/include/c++/9/ext/type_traits.h \
+ /usr/include/c++/9/ext/numeric_traits.h \
+ /usr/include/c++/9/bits/stl_pair.h /usr/include/c++/9/bits/move.h \
+ /usr/include/c++/9/bits/concept_check.h /usr/include/c++/9/type_traits \
+ /usr/include/c++/9/bits/stl_iterator_base_types.h \
+ /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/9/debug/assertions.h \
+ /usr/include/c++/9/bits/stl_iterator.h \
+ /usr/include/c++/9/bits/ptr_traits.h /usr/include/c++/9/debug/debug.h \
+ /usr/include/c++/9/bits/predefined_ops.h \
+ /usr/include/c++/9/bits/postypes.h /usr/include/c++/9/cwchar \
+ /usr/include/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+ /usr/include/c++/9/cstdint \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/include/c++/9/bits/allocator.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h \
+ /usr/include/c++/9/ext/new_allocator.h /usr/include/c++/9/new \
+ /usr/include/c++/9/exception /usr/include/c++/9/bits/exception_ptr.h \
+ /usr/include/c++/9/bits/cxxabi_init_exception.h \
+ /usr/include/c++/9/bits/nested_exception.h \
+ /usr/include/c++/9/bits/localefwd.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h \
+ /usr/include/c++/9/clocale /usr/include/locale.h \
+ /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/9/iosfwd \
+ /usr/include/c++/9/cctype /usr/include/ctype.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endianness.h \
+ /usr/include/c++/9/bits/ostream_insert.h \
+ /usr/include/c++/9/bits/cxxabi_forced.h \
+ /usr/include/c++/9/bits/stl_function.h \
+ /usr/include/c++/9/backward/binders.h \
+ /usr/include/c++/9/bits/range_access.h \
+ /usr/include/c++/9/initializer_list \
+ /usr/include/c++/9/bits/basic_string.h \
+ /usr/include/c++/9/ext/atomicity.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+ /usr/include/x86_64-linux-gnu/bits/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+ /usr/include/x86_64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/timex.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+ /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+ /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+ /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h \
+ /usr/include/c++/9/ext/alloc_traits.h \
+ /usr/include/c++/9/bits/alloc_traits.h \
+ /usr/include/c++/9/ext/string_conversions.h /usr/include/c++/9/cstdlib \
+ /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+ /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+ /usr/include/x86_64-linux-gnu/sys/select.h \
+ /usr/include/x86_64-linux-gnu/bits/select.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+ /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/c++/9/bits/std_abs.h /usr/include/c++/9/cstdio \
+ /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h /usr/include/c++/9/cerrno \
+ /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+ /usr/include/c++/9/bits/functional_hash.h \
+ /usr/include/c++/9/bits/basic_string.tcc /usr/include/c++/9/cassert \
+ /usr/include/assert.h /usr/include/c++/9/sstream \
+ /usr/include/c++/9/istream /usr/include/c++/9/ios \
+ /usr/include/c++/9/bits/ios_base.h \
+ /usr/include/c++/9/bits/locale_classes.h \
+ /usr/include/c++/9/bits/locale_classes.tcc \
+ /usr/include/c++/9/system_error \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
+ /usr/include/c++/9/stdexcept /usr/include/c++/9/streambuf \
+ /usr/include/c++/9/bits/streambuf.tcc \
+ /usr/include/c++/9/bits/basic_ios.h \
+ /usr/include/c++/9/bits/locale_facets.h /usr/include/c++/9/cwctype \
+ /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h \
+ /usr/include/c++/9/bits/streambuf_iterator.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_inline.h \
+ /usr/include/c++/9/bits/locale_facets.tcc \
+ /usr/include/c++/9/bits/basic_ios.tcc /usr/include/c++/9/ostream \
+ /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/bits/istream.tcc \
+ /usr/include/c++/9/bits/sstream.tcc \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkExceptionObject.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkSmartPointer.h \
+ /usr/include/c++/9/iostream \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkFixedArray.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNumericTraitsFixedArrayPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNumericTraits.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/vcl/vcl_limits.h \
+ /usr/include/c++/9/limits \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/vcl/vcl_compiler.h \
+ /usr/include/c++/9/cstddef \
+ /home/daniel/Programs/ITK/bin/Modules/ThirdParty/VNL/src/vxl/vcl/vcl_config_manual.h \
+ /home/daniel/Programs/ITK/bin/Modules/ThirdParty/VNL/src/vxl/vcl/vcl_config_compiler.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/vcl/vcl_compiler_detection.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/vcl/compilers/VXL_COMPILER_INFO_GNU_CXX.h \
+ /home/daniel/Programs/ITK/bin/Modules/ThirdParty/VNL/src/vxl/vcl/vcl_config_headers.h \
+ /usr/include/c++/9/complex /usr/include/c++/9/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkFixedArray.h \
+ /home/daniel/Programs/ITK/Modules/Filtering/ImageGrid/include/itkFlipImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageToImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageSource.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkProcessObject.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkDataObject.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkObject.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkLightObject.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkTimeStamp.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkIntTypes.h \
+ /usr/include/c++/9/climits \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkAtomicInt.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkAtomicIntDetail.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkSimpleFastMutexLock.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkThreadSupport.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkConceptChecking.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkPixelTraits.h \
+ /usr/include/c++/9/atomic /usr/include/c++/9/bits/atomic_base.h \
+ /usr/include/c++/9/bits/atomic_lockfree_defines.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkIndent.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkEventObject.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkMetaDataDictionary.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkMetaDataObjectBase.h \
+ /usr/include/c++/9/vector /usr/include/c++/9/bits/stl_construct.h \
+ /usr/include/c++/9/bits/stl_uninitialized.h \
+ /usr/include/c++/9/bits/stl_vector.h \
+ /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
+ /usr/include/c++/9/map /usr/include/c++/9/bits/stl_tree.h \
+ /usr/include/c++/9/ext/aligned_buffer.h \
+ /usr/include/c++/9/bits/stl_map.h /usr/include/c++/9/tuple \
+ /usr/include/c++/9/utility /usr/include/c++/9/bits/stl_relops.h \
+ /usr/include/c++/9/array /usr/include/c++/9/bits/uses_allocator.h \
+ /usr/include/c++/9/bits/invoke.h /usr/include/c++/9/bits/stl_multimap.h \
+ /usr/include/c++/9/bits/erase_if.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkSmartPointerForwardReference.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkWeakPointer.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkRealTimeStamp.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkRealTimeInterval.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkDomainThreader.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkMultiThreader.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkMutexLock.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkObjectFactory.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkObjectFactoryBase.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkCreateObjectFunction.h \
+ /usr/include/c++/9/list /usr/include/c++/9/bits/stl_list.h \
+ /usr/include/c++/9/bits/allocated_ptr.h /usr/include/c++/9/bits/list.tcc \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkThreadPool.h \
+ /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h /usr/include/c++/9/set \
+ /usr/include/c++/9/bits/stl_set.h /usr/include/c++/9/bits/stl_multiset.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkThreadJob.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkMutexLockHolder.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkDomainThreader.hxx \
+ /usr/include/c++/9/algorithm /usr/include/c++/9/bits/stl_algo.h \
+ /usr/include/c++/9/bits/algorithmfwd.h \
+ /usr/include/c++/9/bits/stl_heap.h /usr/include/c++/9/bits/stl_tempbuf.h \
+ /usr/include/c++/9/bits/uniform_int_dist.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImage.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageRegion.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkRegion.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkSize.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkContinuousIndex.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkPoint.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkVector.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_vector_ref.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_vector.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_error.h \
+ /home/daniel/Programs/ITK/bin/Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_export.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/vcl/vcl_compiler.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_tag.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_c_vector.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_numeric_traits.h \
+ /home/daniel/Programs/ITK/bin/Modules/ThirdParty/VNL/src/vxl/core/vxl_config.h \
+ /home/daniel/Programs/ITK/bin/Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_config.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/vcl/vcl_cassert.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/vcl/vcl_deprecated.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkVector.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkMath.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkMathDetail.h \
+ /usr/include/c++/9/fenv.h /usr/include/fenv.h \
+ /usr/include/x86_64-linux-gnu/bits/fenv.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/mm_malloc.h \
+ /usr/include/c++/9/stdlib.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_math.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/dll.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vxl_version.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNumericTraitsVectorPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkPoint.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNumericTraitsPointPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkIndex.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkOffset.h \
+ /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/9/ext/concurrence.h \
+ /usr/include/c++/9/bits/unique_ptr.h \
+ /usr/include/c++/9/bits/shared_ptr.h \
+ /usr/include/c++/9/bits/shared_ptr_base.h \
+ /usr/include/c++/9/bits/refwrap.h \
+ /usr/include/c++/9/bits/shared_ptr_atomic.h \
+ /usr/include/c++/9/backward/auto_ptr.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageRegion.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImportImageContainer.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImportImageContainer.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkDefaultPixelAccessor.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkDefaultPixelAccessorFunctor.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNeighborhoodAccessorFunctor.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageBoundaryCondition.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNeighborhood.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNeighborhoodAllocator.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkSliceIterator.h \
+ /usr/include/c++/9/valarray /usr/include/c++/9/bits/valarray_array.h \
+ /usr/include/c++/9/bits/valarray_array.tcc \
+ /usr/include/c++/9/bits/valarray_before.h \
+ /usr/include/c++/9/bits/slice_array.h \
+ /usr/include/c++/9/bits/valarray_after.h \
+ /usr/include/c++/9/bits/gslice.h /usr/include/c++/9/bits/gslice_array.h \
+ /usr/include/c++/9/bits/mask_array.h \
+ /usr/include/c++/9/bits/indirect_array.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNeighborhood.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageBase.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkMatrix.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkCovariantVector.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNumericTraitsCovariantVectorPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkCovariantVector.hxx \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_matrix_fixed.hxx \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_matrix_fixed.h \
+ /usr/include/c++/9/cstring /usr/include/string.h /usr/include/strings.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_matrix.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_matrix_ref.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_matrix.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_vector_fixed.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_vector.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_vector_ref.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_transpose.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_fastops.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/algo/vnl_matrix_inverse.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/algo/vnl_svd.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_diag_matrix.h \
+ /home/daniel/Programs/ITK/bin/Modules/ThirdParty/VNL/src/vxl/core/vnl/algo/vnl_algo_export.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/algo/vnl_determinant.h \
+ /home/daniel/Programs/ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_matrix_fixed.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkMatrix.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageHelper.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkFloatTypes.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageTransformHelper.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageBase.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkFastMutexLock.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkSpatialOrientation.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImage.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageRegionSplitterBase.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageIORegion.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageSourceCommon.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageSource.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkOutputDataObjectIterator.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkDataObjectIterator.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageToImageFilterDetail.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageToImageFilterCommon.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageToImageFilter.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageToImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkInputDataObjectIterator.h \
+ /home/daniel/Programs/ITK/Modules/Filtering/ImageGrid/include/itkFlipImageFilter.hxx \
+ /home/daniel/Programs/ITK/Modules/Filtering/ImageGrid/include/itkFlipImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageScanlineIterator.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageScanlineConstIterator.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageIterator.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageConstIterator.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageConstIterator.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageIterator.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageScanlineConstIterator.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageScanlineIterator.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageScanlineIterator.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkProgressReporter.h \
+ /home/daniel/Programs/ITK/Modules/IO/ImageBase/include/itkImageFileReader.h \
+ /home/daniel/Programs/ITK/Modules/IO/ImageBase/include/itkImageFileReaderException.h \
+ /home/daniel/Programs/ITK/bin/Modules/Core/Common/ITKIOImageBaseExport.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkMacro.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkExceptionObject.h \
+ /home/daniel/Programs/ITK/Modules/IO/ImageBase/include/itkImageIOBase.h \
+ /home/daniel/Programs/ITK/bin/Modules/IO/ImageBase/itkIOConfigure.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkLightProcessObject.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkIndent.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageIORegion.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkRGBPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNumericTraitsRGBPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkRGBPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkRGBPixel.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkRGBAPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNumericTraitsRGBAPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkRGBAPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkRGBAPixel.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkCovariantVector.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkSymmetricSecondRankTensor.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkSymmetricEigenAnalysis.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkSymmetricEigenAnalysis.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNumericTraitsTensorPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkSymmetricSecondRankTensor.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkSymmetricSecondRankTensor.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkDiffusionTensor3D.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNumericTraitsDiffusionTensor3DPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkDiffusionTensor3D.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkDiffusionTensor3D.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageRegionSplitterBase.h \
+ /usr/include/c++/9/fstream /usr/include/c++/9/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
+ /usr/include/c++/9/bits/fstream.tcc \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageSource.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageRegion.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkDefaultConvertPixelTraits.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkVariableLengthVector.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkStaticAssert.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkMetaProgrammingLibrary.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkEnableIf.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkIsBaseOf.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkIsConvertible.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkIsSame.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkIsNumber.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkPromoteType.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkBinaryOperationConcept.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNumericTraitsVariableLengthVectorPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkVariableLengthVector.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkVariableSizeMatrix.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkArray.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkArray.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNumericTraitsArrayPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkVariableSizeMatrix.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkSimpleDataObjectDecorator.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkSimpleDataObjectDecorator.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkSimpleDataObjectDecorator.h \
+ /home/daniel/Programs/ITK/Modules/IO/ImageBase/include/itkImageFileReader.hxx \
+ /home/daniel/Programs/ITK/Modules/IO/ImageBase/include/itkImageFileReader.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkObjectFactory.h \
+ /home/daniel/Programs/ITK/Modules/IO/ImageBase/include/itkImageIOFactory.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkObject.h \
+ /home/daniel/Programs/ITK/Modules/IO/ImageBase/include/itkConvertPixelBuffer.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNumericTraits.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkEnableIf.h \
+ /home/daniel/Programs/ITK/Modules/IO/ImageBase/include/itkConvertPixelBuffer.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkPixelTraits.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkVectorImage.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkDefaultVectorPixelAccessor.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkDefaultVectorPixelAccessorFunctor.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkVectorImageNeighborhoodAccessorFunctor.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkVectorImage.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkVectorImage.h \
+ /home/daniel/Programs/ITK/bin/Modules/ThirdParty/KWSys/src/itksys/SystemTools.hxx \
+ /home/daniel/Programs/ITK/bin/Modules/ThirdParty/KWSys/src/itksys/Configure.hxx \
+ /home/daniel/Programs/ITK/bin/Modules/ThirdParty/KWSys/src/itksys/Configure.h \
+ /home/daniel/Programs/ITK/bin/Modules/ThirdParty/KWSys/src/itksys/String.hxx \
+ /usr/include/x86_64-linux-gnu/sys/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+ /usr/include/x86_64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
+ /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
+ /home/daniel/3D-heart-models/Scar_Process/ScarProcessing/build/ITKIOFactoryRegistration/itkImageIOFactoryRegisterManager.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImage.h \
+ /home/daniel/Programs/ITK/Modules/Filtering/Smoothing/include/itkMedianImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Filtering/ImageFilterBase/include/itkBoxImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Filtering/ImageFilterBase/include/itkCastImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkUnaryFunctorImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkInPlaceImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkInPlaceImageFilter.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageRegionIteratorWithIndex.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageRegionConstIteratorWithIndex.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageConstIteratorWithIndex.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageConstIteratorWithIndex.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageRegionConstIteratorWithIndex.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageIteratorWithIndex.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageIteratorWithIndex.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageRegionIteratorWithIndex.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkUnaryFunctorImageFilter.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkUnaryFunctorImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkProgressReporter.h \
+ /home/daniel/Programs/ITK/Modules/Filtering/ImageFilterBase/include/itkCastImageFilter.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageAlgorithm.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageRegionIterator.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageRegionConstIterator.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageRegionConstIterator.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageRegionIterator.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageAlgorithm.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageAlgorithm.h \
+ /home/daniel/Programs/ITK/Modules/Filtering/ImageFilterBase/include/itkBoxImageFilter.hxx \
+ /home/daniel/Programs/ITK/Modules/Filtering/ImageFilterBase/include/itkBoxImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkProgressAccumulator.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkCommand.h \
+ /home/daniel/Programs/ITK/Modules/Filtering/Smoothing/include/itkMedianImageFilter.hxx \
+ /home/daniel/Programs/ITK/Modules/Filtering/Smoothing/include/itkMedianImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkConstNeighborhoodIterator.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkZeroFluxNeumannBoundaryCondition.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkZeroFluxNeumannBoundaryCondition.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkConstNeighborhoodIterator.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkConstNeighborhoodIterator.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNeighborhoodInnerProduct.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNeighborhoodIterator.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNeighborhoodIterator.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkConstSliceIterator.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNeighborhoodInnerProduct.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNeighborhoodInnerProduct.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageRegionIterator.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNeighborhoodAlgorithm.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNeighborhoodOperator.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNeighborhoodOperator.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNeighborhoodAlgorithm.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNeighborhoodAlgorithm.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkOffset.h \
+ /home/daniel/Programs/ITK/Modules/Filtering/ImageGrid/include/itkResampleImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Core/Transform/include/itkTransform.h \
+ /home/daniel/Programs/ITK/Modules/Core/Transform/include/itkTransformBase.h \
+ /home/daniel/Programs/ITK/bin/Modules/Core/Common/ITKTransformExport.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkPoint.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkArray2D.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkArray2D.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkArray2D.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkOptimizerParameters.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkOptimizerParametersHelper.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkOptimizerParameters.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkOptimizerParameters.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkIntTypes.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkVector.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkVariableLengthVector.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkMatrix.h \
+ /home/daniel/Programs/ITK/Modules/Core/Transform/include/itkTransform.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Transform/include/itkTransform.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkCrossHelper.h \
+ /home/daniel/Programs/ITK/Modules/Core/ImageFunction/include/itkExtrapolateImageFunction.h \
+ /home/daniel/Programs/ITK/Modules/Core/ImageFunction/include/itkImageFunction.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkFunctionBase.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkIndex.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageBase.h \
+ /home/daniel/Programs/ITK/Modules/Core/ImageFunction/include/itkImageFunction.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/ImageFunction/include/itkLinearInterpolateImageFunction.h \
+ /home/daniel/Programs/ITK/Modules/Core/ImageFunction/include/itkInterpolateImageFunction.h \
+ /home/daniel/Programs/ITK/Modules/Core/ImageFunction/include/itkLinearInterpolateImageFunction.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkConceptChecking.h \
+ /home/daniel/Programs/ITK/Modules/Core/ImageFunction/include/itkLinearInterpolateImageFunction.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkMath.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkSize.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkDataObjectDecorator.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkDataObjectDecorator.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkDataObjectDecorator.h \
+ /home/daniel/Programs/ITK/Modules/Filtering/ImageGrid/include/itkResampleImageFilter.hxx \
+ /home/daniel/Programs/ITK/Modules/Filtering/ImageGrid/include/itkResampleImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Core/Transform/include/itkIdentityTransform.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageRegionIteratorWithIndex.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkSpecialCoordinatesImage.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkSpecialCoordinatesImage.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkSpecialCoordinatesImage.h \
+ /home/daniel/Programs/ITK/Modules/Filtering/Smoothing/include/itkRecursiveGaussianImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Filtering/ImageFilterBase/include/itkRecursiveSeparableImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkInPlaceImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageRegionSplitterDirection.h \
+ /home/daniel/Programs/ITK/Modules/Filtering/ImageFilterBase/include/itkRecursiveSeparableImageFilter.hxx \
+ /home/daniel/Programs/ITK/Modules/Filtering/ImageFilterBase/include/itkRecursiveSeparableImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageLinearIteratorWithIndex.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageLinearConstIteratorWithIndex.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageLinearConstIteratorWithIndex.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageLinearIteratorWithIndex.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkImageLinearIteratorWithIndex.h \
+ /home/daniel/Programs/ITK/Modules/Filtering/Smoothing/include/itkRecursiveGaussianImageFilter.hxx \
+ /home/daniel/Programs/ITK/Modules/Filtering/Smoothing/include/itkRecursiveGaussianImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Filtering/ImageIntensity/include/itkIntensityWindowingImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Filtering/ImageIntensity/include/itkIntensityWindowingImageFilter.hxx \
+ /home/daniel/Programs/ITK/Modules/Filtering/ImageIntensity/include/itkIntensityWindowingImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkMinimumMaximumImageCalculator.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkMinimumMaximumImageCalculator.hxx \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkMinimumMaximumImageCalculator.h \
+ /home/daniel/Programs/VTK/Filters/Geometry/vtkDataSetSurfaceFilter.h \
+ /home/daniel/Programs/VTK-build/Filters/Geometry/vtkFiltersGeometryModule.h \
+ /home/daniel/Programs/VTK/Common/ExecutionModel/vtkPolyDataAlgorithm.h \
+ /home/daniel/Programs/VTK-build/Common/ExecutionModel/vtkCommonExecutionModelModule.h \
+ /home/daniel/Programs/VTK/Common/ExecutionModel/vtkAlgorithm.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkObject.h \
+ /home/daniel/Programs/VTK-build/Common/Core/vtkCommonCoreModule.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkObjectBase.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkIndent.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkSystemIncludes.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkWin32Header.h \
+ /home/daniel/Programs/VTK-build/Common/Core/vtkConfigure.h \
+ /home/daniel/Programs/VTK-build/Common/Core/vtkVersionMacros.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkABI.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkIOStream.h \
+ /usr/include/c++/9/iomanip /usr/include/c++/9/locale \
+ /usr/include/c++/9/bits/locale_facets_nonio.h /usr/include/c++/9/ctime \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/9/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/9/bits/locale_conv.h \
+ /usr/include/c++/9/bits/quoted_string.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkType.h \
+ /home/daniel/Programs/VTK-build/Utilities/KWIML/vtk_kwiml.h \
+ /home/daniel/Programs/VTK/Utilities/KWIML/vtkkwiml/abi.h \
+ /home/daniel/Programs/VTK/Utilities/KWIML/vtkkwiml/include/kwiml/abi.h \
+ /home/daniel/Programs/VTK/Utilities/KWIML/vtkkwiml/int.h \
+ /home/daniel/Programs/VTK/Utilities/KWIML/vtkkwiml/include/kwiml/int.h \
+ /home/daniel/Programs/VTK/Utilities/KWIML/vtkkwiml/include/kwiml/abi.h \
+ /usr/include/inttypes.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkWrappingHints.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkOStreamWrapper.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkOStrStreamWrapper.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkAtomicTypes.h \
+ /home/daniel/Programs/VTK-build/Common/Core/vtkAtomic.h \
+ /home/daniel/Programs/VTK-build/Common/Core/vtkCommonCoreModule.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkAtomicTypeConcepts.h \
+ /home/daniel/Programs/VTK-build/Common/Core/vtkConfigure.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkSystemIncludes.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkType.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkSetGet.h \
+ /usr/include/c++/9/math.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkTimeStamp.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkWeakPointerBase.h \
+ /home/daniel/Programs/VTK/Common/DataModel/vtkPolyData.h \
+ /home/daniel/Programs/VTK-build/Common/DataModel/vtkCommonDataModelModule.h \
+ /home/daniel/Programs/VTK/Common/DataModel/vtkPointSet.h \
+ /home/daniel/Programs/VTK/Common/DataModel/vtkDataSet.h \
+ /home/daniel/Programs/VTK/Common/DataModel/vtkDataObject.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkPoints.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkObject.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkDataArray.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkAbstractArray.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkVariant.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkStdString.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkUnicodeString.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkVariantInlineOperators.h \
+ /home/daniel/Programs/VTK/Common/DataModel/vtkCellTypes.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkIntArray.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkAOSDataArrayTemplate.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkGenericDataArray.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkSmartPointer.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkSmartPointerBase.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkTypeTraits.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkGenericDataArrayLookupHelper.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkIdList.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkGenericDataArray.txx \
+ /home/daniel/Programs/VTK/Common/Core/vtkMath.h \
+ /home/daniel/Programs/VTK-build/Common/Core/vtkMathConfigure.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/float.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkVariantCast.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkBuffer.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkObjectFactory.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkDebugLeaksManager.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkUnsignedCharArray.h \
+ /home/daniel/Programs/VTK/Common/DataModel/vtkCellType.h \
+ /home/daniel/Programs/VTK/Common/DataModel/vtkCellLinks.h \
+ /home/daniel/Programs/VTK/Common/DataModel/vtkAbstractCellLinks.h \
+ /home/daniel/Programs/VTK/Common/DataModel/vtkCellArray.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkIdTypeArray.h \
+ /home/daniel/Programs/VTK/Common/DataModel/vtkCell.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkIdList.h \
+ /home/daniel/Programs/ITK/Modules/Bridge/VtkGlue/include/itkImageToVTKImageFilter.h \
+ /home/daniel/Programs/ITK/Modules/Bridge/VTK/include/itkVTKImageExport.h \
+ /home/daniel/Programs/ITK/Modules/Bridge/VTK/include/itkVTKImageExportBase.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkProcessObject.h \
+ /home/daniel/Programs/ITK/bin/Modules/Core/Common/ITKVTKExport.h \
+ /home/daniel/Programs/ITK/Modules/Bridge/VTK/include/itkVTKImageExport.hxx \
+ /home/daniel/Programs/ITK/Modules/Bridge/VTK/include/itkVTKImageExport.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNumericTraitsArrayPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNumericTraitsCovariantVectorPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNumericTraitsDiffusionTensor3DPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNumericTraitsFixedArrayPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNumericTraitsPointPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNumericTraitsRGBPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNumericTraitsRGBAPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNumericTraitsTensorPixel.h \
+ /home/daniel/Programs/ITK/Modules/Core/Common/include/itkNumericTraitsVectorPixel.h \
+ /home/daniel/Programs/VTK/IO/Image/vtkImageImport.h \
+ /home/daniel/Programs/VTK-build/IO/Image/vtkIOImageModule.h \
+ /home/daniel/Programs/VTK/Common/ExecutionModel/vtkImageAlgorithm.h \
+ /home/daniel/Programs/VTK/Common/DataModel/vtkImageData.h \
+ /home/daniel/Programs/VTK/Common/DataModel/vtkStructuredData.h \
+ /home/daniel/Programs/ITK/Modules/Bridge/VtkGlue/include/itkImageToVTKImageFilter.hxx \
+ /home/daniel/Programs/ITK/Modules/Bridge/VtkGlue/include/itkImageToVTKImageFilter.h \
+ /home/daniel/Programs/VTK/Common/Core/vtkSmartPointer.h \
+ /home/daniel/Programs/VTK/Common/DataModel/vtkUnstructuredGrid.h \
+ /home/daniel/Programs/VTK/Common/DataModel/vtkUnstructuredGridBase.h \
+ /home/daniel/Programs/VTK/Filters/Core/vtkSmoothPolyDataFilter.h \
+ /home/daniel/Programs/VTK-build/Filters/Core/vtkFiltersCoreModule.h \
+ /home/daniel/Programs/VTK/IO/Legacy/vtkPolyDataWriter.h \
+ /home/daniel/Programs/VTK-build/IO/Legacy/vtkIOLegacyModule.h \
+ /home/daniel/Programs/VTK/IO/Legacy/vtkDataWriter.h \
+ /home/daniel/Programs/VTK/IO/Core/vtkWriter.h \
+ /home/daniel/Programs/VTK-build/IO/Core/vtkIOCoreModule.h \
+ /home/daniel/Programs/VTK/Common/ExecutionModel/vtkAlgorithm.h \
+ /home/daniel/Programs/VTK/Filters/Core/vtkThreshold.h \
+ /home/daniel/Programs/VTK/Common/ExecutionModel/vtkUnstructuredGridAlgorithm.h

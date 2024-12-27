@@ -48,6 +48,8 @@ int main(int argc, char * argv[] )
 
 // -----Initial filters--------------------------------------------------------------
 // ---Flip Axes---
+    // Inverte uma imagem nos eixos especificados pelo usuario
+
     typedef itk::FlipImageFilter <ImageType> FlipImageFilterType;
     FlipImageFilterType::Pointer flipFilter
     = FlipImageFilterType::New ();
@@ -63,12 +65,15 @@ int main(int argc, char * argv[] )
 
 
 // ---Median Filter---
+    // Computes an image where a given pixel is the median value of the the pixels in a neighborhood about the corresponding input pixel.
     typedef itk::MedianImageFilter<ImageType, ImageType > FilterType;
     FilterType::Pointer medianFilter = FilterType::New();
+    
     FilterType::InputSizeType radius;
-
     radius.Fill(2);
     medianFilter->SetRadius(radius);
+
+    // Usa a imagem com eixos flipados
     medianFilter->SetInput( flipFilter->GetOutput() );
     medianFilter->Update();
 
@@ -84,14 +89,18 @@ int main(int argc, char * argv[] )
 
 
 // -----Isotropic resampling---------------------------------------------------
+    // Gera tipos de arquivo itk do tipo float e double
+    // Aparentemente usa o double para ccalculo e o float para finalizacao
+    // pelo que entendi
     typedef   double            InternalPixelType;
     typedef itk::Image<PixelType, Dimension>  InputImageType;
     typedef itk::Image< InternalPixelType, Dimension >   InternalImageType;
 
 // ---Intensity windowing---
-    typedef itk::IntensityWindowingImageFilter<
-    ImageType,
-    InternalImageType >  IntensityFilterType;
+    // Pelo que entendi mapeia a intensidade dos pixels de uma faixa
+    // para outra, os valores a baixo sao mandados para o minimo de saida
+    // os valores acima sao mandados para o maximo da saida
+    typedef itk::IntensityWindowingImageFilter<ImageType, InternalImageType >  IntensityFilterType;
     IntensityFilterType::Pointer intensityWindowing = IntensityFilterType::New();
     intensityWindowing->SetWindowMinimum(0.0);
     intensityWindowing->SetWindowMaximum(150.0);
@@ -100,19 +109,25 @@ int main(int argc, char * argv[] )
     intensityWindowing->SetInput( medianFilter->GetOutput() );
 
 // ---Recursive Gaussian---
-    typedef itk::RecursiveGaussianImageFilter<
-    InternalImageType,
-    InternalImageType > GaussianFilterType;
+    // Suaviza a imagem em x e y com um filtro gaussiano
 
+
+    typedef itk::RecursiveGaussianImageFilter < InternalImageType, InternalImageType > GaussianFilterType;
+
+    // Cria ponteiros para suavizar ao longo de x e depois de y
     GaussianFilterType::Pointer smootherX = GaussianFilterType::New();
     GaussianFilterType::Pointer smootherY = GaussianFilterType::New();
     smootherX->SetInput( intensityWindowing->GetOutput() );
     smootherY->SetInput( smootherX->GetOutput() );
 
+    // Cria um ponteiro constante de espacamento entre os pixels da
+    // imagem de saida da mediana, ou seja, a imagem original
     InputImageType::ConstPointer inputImage = medianFilter->GetOutput();
     const InputImageType::SpacingType& inputSpacing = inputImage->GetSpacing();
 
+    // no caso usamos o espacamento na direcao x para o espaco isomentrico
     const float isoSpacing = inputSpacing[0];
+    // const float isoSpacing = std::min({inputSpacing[0], inputSpacing[1], inputSpacing[2]});
     smootherX->SetSigma( isoSpacing );
     smootherY->SetSigma( isoSpacing );
 
@@ -120,25 +135,32 @@ int main(int argc, char * argv[] )
     smootherY->SetDirection( 1 );
 
 // ---Resample---
+    // Faz reamostragem na internal image
     typedef  unsigned char  OutputPixelType;
     typedef itk::Image< OutputPixelType,   Dimension >   OutputImageType;
-    typedef itk::ResampleImageFilter<
-    InternalImageType, OutputImageType >  ResampleFilterType;
+    typedef itk::ResampleImageFilter< InternalImageType, OutputImageType >  ResampleFilterType;
     ResampleFilterType::Pointer resampler = ResampleFilterType::New();
 
 // ---Identity transformation---
+    // Cria uma instancia de transformacao e coloca na reamostragem
+    // Para fazer uma reamostragem apenas em intensidade e espacamento
+    // nao em distancia
     typedef itk::IdentityTransform< double, Dimension >  TransformType;
     TransformType::Pointer transform = TransformType::New();
     transform->SetIdentity();
     resampler->SetTransform( transform );
 
 // ---Linear interpolation---
-    typedef itk::LinearInterpolateImageFunction<
-    InternalImageType, double >  InterpolatorType;
+
+    // cria um interpolador para o uso na reamostragem
+    typedef itk::LinearInterpolateImageFunction< InternalImageType, double >  InterpolatorType;
     InterpolatorType::Pointer interpolator = InterpolatorType::New();
     resampler->SetInterpolator( interpolator );
+    // O interpolador serve para calcular o valor de cada voxel novo
+    // com bases nos valores vizinhos da imagem original
 
     resampler->SetDefaultPixelValue( 255 ); // highlight regions without source
+    //
 
     OutputImageType::SpacingType spacing;
     spacing[0] = isoSpacing;
@@ -150,12 +172,11 @@ int main(int argc, char * argv[] )
     resampler->SetOutputDirection( inputImage->GetDirection() );
 
 // ---Change size of image voxels---
-    InputImageType::SizeType   inputSize =
-    inputImage->GetLargestPossibleRegion().GetSize();
+    InputImageType::SizeType   inputSize = inputImage->GetLargestPossibleRegion().GetSize();
     typedef InputImageType::SizeType::SizeValueType SizeValueType;
-    const double dx = inputSize[0] * inputSpacing[0] / isoSpacing;
-    const double dy = inputSize[1] * inputSpacing[1] / isoSpacing;
-    const double dz = (inputSize[2] - 1 ) * inputSpacing[2] / isoSpacing;
+    const double dx = ( inputSize[0] * inputSpacing[0] ) / isoSpacing;
+    const double dy = ( inputSize[1] * inputSpacing[1] ) / isoSpacing;
+    const double dz = (( inputSize[2] - 1 ) * inputSpacing[2] ) / isoSpacing;
 
     InputImageType::SizeType   size;
     size[0] = static_cast<SizeValueType>( dx );
@@ -176,9 +197,10 @@ int main(int argc, char * argv[] )
     connector->Update();
 
 // ---Threshold---
-    vtkSmartPointer<vtkThreshold> threshold =
-    vtkSmartPointer<vtkThreshold>::New();
+    vtkSmartPointer<vtkThreshold> threshold = vtkSmartPointer<vtkThreshold>::New();
 
+    // Valores minimos e maximos para serem considerados uma regiao de
+    //interesse
     int lowerThreshold = 50;
     int upperThreshold = 255;
     threshold->ThresholdBetween(lowerThreshold, upperThreshold);
@@ -193,8 +215,7 @@ int main(int argc, char * argv[] )
     surfaceFilter->Update();
 
 // ---Smoothing---
-    vtkSmartPointer<vtkSmoothPolyDataFilter> smoothFilter =
-    vtkSmartPointer<vtkSmoothPolyDataFilter>::New();
+    vtkSmartPointer<vtkSmoothPolyDataFilter> smoothFilter = vtkSmartPointer<vtkSmoothPolyDataFilter>::New();
 
     smoothFilter->SetNumberOfIterations(600);
     smoothFilter->SetInputData(surfaceFilter->GetOutput());

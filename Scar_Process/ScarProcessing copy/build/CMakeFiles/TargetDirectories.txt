@@ -1,0 +1,3 @@
+/home/daniel/3D-heart-models/Scar_Process/ScarProcessing/build/CMakeFiles/ScarProcessing.dir
+/home/daniel/3D-heart-models/Scar_Process/ScarProcessing/build/CMakeFiles/edit_cache.dir
+/home/daniel/3D-heart-models/Scar_Process/ScarProcessing/build/CMakeFiles/rebuild_cache.dir

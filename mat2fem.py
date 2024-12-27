@@ -19,8 +19,7 @@ surf=root+'/Files/'+Date+'/'+patname
 vtk_srf=surf+'/vtkFiles'
 msh_srf=surf+'/mshFiles'
 scar_srf=surf+'/scarFiles'
-temp_srf=root+'/tempFiles'
-stl_srf=temp_srf+'/stlFiles'
+stl_srf=surf+'/stlFiles'
 vtxpath=surf+'/PreFiberFiles'
 pre_fem=root+'/FEM/'+Date
 fem=root+'/FEM/'+Date+'/'+patname
@@ -125,7 +124,10 @@ for i in ['plyFiles','vtkFiles','txtFiles']:
 	os.chdir(conv+'/Data/'+i)
 	folder=surf+'/'+i
 	os.mkdir(folder)
-	move(os.getcwd(),folder)	
+	move(os.getcwd(),folder) 
+
+folder_stl = surf+'/stlFiles'
+os.mkdir(folder_stl)
 
 
 #generating and moving scar surfaces
