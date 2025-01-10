@@ -1,0 +1,38 @@
+#Don't change anything below this line
+dt = 25   #time step size in us
+num_external_imp = 1   #Load custom ionic model
+external_imp[0] = /home/daniel/3D-heart-models/scripts/TT_ISCH.so
+
+num_imp_regions = 1
+imp_region[0].name = "normal"
+imp_region[0].im = "TT_ISCH"   #Augmented LRDII
+imp_region[0].num_IDs = 1
+imp_region[0].ID[0] = 1
+imp_region[0].im_param = "cell_type=2,Gkr=.172,Gks=.441,GpCa=.8666,GpK=.00219"
+
+num_gregions = 1
+
+#healthy tissue
+#gregion[0].description = "heart"
+gregion[0].g_il = 0.255 #standard g_il/10
+gregion[0].g_it = 0.0775
+gregion[0].num_IDs = 1
+gregion[0].ID[0] = 1
+
+timedt = 10  #output status every xx ms
+# geometric data 
+experiment = 0  #3D simulation
+
+mat_entries_per_row = 90
+cg_tol_ellip = 1e-4
+bidomain = 0
+purkEleType = 0 #no purkinje fibers
+vm_per_phie = 2
+parab_solve = 1   #CN is on
+#mass_lumping = 0
+
+num_LATs=1
+lats[0].measurand = 0
+lats[0].all = 1
+lats[0].threshold = 0.0
+lats[0].method = 1

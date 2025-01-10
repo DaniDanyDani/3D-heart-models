@@ -42,6 +42,4 @@ S_base = news; Plane Surface(S_base) = {LL_base};
 Physical Surface("BASE") = {S_base};
 
 SL_wall = newsl; Surface Loop(SL_wall) = {S_LV, S_RV, S_epi, S_base};
-V_wall = newv; Volume(V_wall) = {SL_wall};
-Physical Volume("WALL") = {V_wall};
 Coherence;

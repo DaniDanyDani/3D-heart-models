@@ -27,7 +27,7 @@ conv=root+'/Convertion_Process'
 scar=root+'/Scar_Process'
 script=root+'/scripts/'
 program=os.getenv('HOME')+'/Programs'
-gmsh='/home/daniel/Programs/gmsh/build/gmsh' 
+gmsh='~/Programs/gmsh/build/gmsh' 
 
 """ FUNCTIONS PART 1: MATLAB SLICE ALIGNMENT """
 #running the matlab script alignAll.m
@@ -163,15 +163,15 @@ def mergevtk(i,msh_srf,vtk_srf):
 	biv_mesh_heart='{}/scripts/biv_mesh.geo'.format(root)
 	biv_mesh='{}/scripts/biv_mesh.geo'.format(root)
 	biv_msh='{}/scripts/biv_msh.geo'.format(root)
-	biv_stl_scar='/home/daniel/3D-heart-models/scripts/biv_stl_scar.geo'
+	biv_stl_scar='{}/scripts/biv_mstl_scar.geo'.format(root)
 	os.system('{} -3 {} -merge {} {} {} -o {} 2>&1 {}'.format(gmsh, lv_endo, rv_endo, rv_epi, biv_mesh, msh, out))
 	
 	# Gerando o .msh com as superfícies do coração e usando merge na fibrose pra gerar o modelo: -------------------------
 	os.system('{} -3 {} {} -o {}'.format(gmsh, scar_vtk, biv_stl_scar, stl_scar))
-	os.system('cp {} {}'.format(stl_scar, "/home/daniel/3D-heart-models/tempFiles/stlFiles/Patient_scar.stl"))
+	os.system('cp {} {}'.format(stl_scar, "./tempFiles/stlFiles/Patient_scar.stl"))
 	os.system('{} -3 {} -merge {} {} {} -o {}'.format(gmsh, lv_endo, rv_endo, rv_epi, biv_mesh_heart, msh_srf_heart))
 	os.system('{} -3 {} -merge {} -o {}'.format(gmsh, msh_srf_heart, biv_msh, msh_heart))
-	os.system('rm {}'.format("/home/daniel/3D-heart-models/tempFiles/stlFiles/Patient_scar.stl"))
+	os.system('rm {}'.format("./tempFiles/stlFiles/Patient_scar.stl"))
 	# ----------------------------------------------------- Tá dando certo, mas preciso conferir
 
 
