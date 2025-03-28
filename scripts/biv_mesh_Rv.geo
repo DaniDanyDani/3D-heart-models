@@ -24,24 +24,22 @@ Mesh.SurfaceFaces = 1;
 
 CreateTopology;
 ll[] = Line "*";
-L_LV_base = newl; Compound Line(L_LV_base) = ll[2];
+// L_LV_base = newl; Compound Line(L_LV_base) = ll[2];
 L_RV_base = newl; Compound Line(L_RV_base) = ll[0];
 L_epi_base = newl; Compound Line(L_epi_base) = ll[1];
 Physical Line("EPI_BASE") = {L_epi_base};
 
 ss[] = Surface "*";
-S_LV = news; Compound Surface(S_LV) = ss[0];
-S_RV = news; Compound Surface(S_RV) = ss[1];
-S_epi = news; Compound Surface(S_epi) = ss[2];
-Physical Surface("LV") = {S_LV};
+// S_LV = news; Compound Surface(S_LV) = ss[0];
+S_RV = news; Compound Surface(S_RV) = ss[0];
+S_epi = news; Compound Surface(S_epi) = ss[1];
+// Physical Surface("LV") = {S_LV};
 Physical Surface("RV") = {S_RV};
 Physical Surface("EPI") = {S_epi};
 
-LL_base = newll; Line Loop(LL_base) = {L_LV_base, L_RV_base, L_epi_base};
+LL_base = newll; Line Loop(LL_base) = {L_RV_base, L_epi_base};
 S_base = news; Plane Surface(S_base) = {LL_base};
 Physical Surface("BASE") = {S_base};
 
-SL_wall = newsl; Surface Loop(SL_wall) = {S_LV, S_RV, S_epi, S_base};
-V_wall = newv; Volume(V_wall) = {SL_wall};
-Physical Volume("WALL") = {V_wall};
+SL_wall = newsl; Surface Loop(SL_wall) = {S_RV, S_epi, S_base};
 Coherence;

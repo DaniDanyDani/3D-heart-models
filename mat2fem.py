@@ -126,8 +126,8 @@ for i in ['plyFiles','vtkFiles','txtFiles']:
 	os.mkdir(folder)
 	move(os.getcwd(),folder) 
 
-folder_stl = surf+'/stlFiles'
-os.mkdir(folder_stl)
+# folder_stl = surf+'/stlFiles'
+# os.mkdir(folder_stl)
 
 
 #generating and moving scar surfaces
@@ -154,6 +154,7 @@ def mergevtk(i,msh_srf,vtk_srf):
 	lv_endo='{}/Patient_{}-LVEndo-Frame_1.vtk'.format(vtk_srf,i)
 	rv_endo='{}/Patient_{}-RVEndo-Frame_1.vtk'.format(vtk_srf,i)
 	rv_epi='{}/Patient_{}-RVEpi-Frame_1.vtk'.format(vtk_srf,i)
+	# scar_vtk='/home/daniel/3D-heart-models/tempFiles/stlFiles/Patient_1_scar.vtk'
 	scar_vtk='{}/Patient_{}_scar.vtk'.format(vtk_srf,i)
 	msh='{}/Patient_{}.msh'.format(msh_srf,i)
 	msh_srf_heart='{}/Patient_{}_surf.msh'.format(msh_srf,i)
@@ -163,16 +164,17 @@ def mergevtk(i,msh_srf,vtk_srf):
 	biv_mesh_heart='{}/scripts/biv_mesh.geo'.format(root)
 	biv_mesh='{}/scripts/biv_mesh.geo'.format(root)
 	biv_msh='{}/scripts/biv_msh.geo'.format(root)
-	biv_stl_scar='{}/scripts/biv_mstl_scar.geo'.format(root)
+	biv_stl_scar='{}/scripts/biv_stl_scar.geo'.format(root)
 	os.system('{} -3 {} -merge {} {} {} -o {} 2>&1 {}'.format(gmsh, lv_endo, rv_endo, rv_epi, biv_mesh, msh, out))
 	
-	# Gerando o .msh com as superfícies do coração e usando merge na fibrose pra gerar o modelo: -------------------------
-	os.system('{} -3 {} {} -o {}'.format(gmsh, scar_vtk, biv_stl_scar, stl_scar))
-	os.system('cp {} {}'.format(stl_scar, "./tempFiles/stlFiles/Patient_scar.stl"))
-	os.system('{} -3 {} -merge {} {} {} -o {}'.format(gmsh, lv_endo, rv_endo, rv_epi, biv_mesh_heart, msh_srf_heart))
-	os.system('{} -3 {} -merge {} -o {}'.format(gmsh, msh_srf_heart, biv_msh, msh_heart))
-	os.system('rm {}'.format("./tempFiles/stlFiles/Patient_scar.stl"))
-	# ----------------------------------------------------- Tá dando certo, mas preciso conferir
+	# # Gerando o .msh com as superfícies do coração e usando merge na fibrose pra gerar o modelo: -------------------------
+	# os.system('{} -3 {} {} -o {}'.format(gmsh, scar_vtk, biv_stl_scar, stl_scar))
+	# os.system('cp {} {}'.format(stl_scar, "./tempFiles/stlFiles/Patient_scar.stl"))
+	# os.system('{} -3 {} -merge {} {} {} -o {}'.format(gmsh, lv_endo, rv_endo, rv_epi, biv_mesh_heart, msh_srf_heart))
+	# # os.system('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+	# os.system('{} -3 {} -merge {} -o {}'.format(gmsh, msh_srf_heart, biv_msh, msh_heart))
+	# os.system('rm {}'.format("./tempFiles/stlFiles/Patient_scar.stl"))
+	# # ----------------------------------------------------- Tá dando certo, mas preciso conferir
 
 
 

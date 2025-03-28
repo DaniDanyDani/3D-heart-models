@@ -1,7 +1,6 @@
-// Mesh.CharacteristicLengthMax = 3 * 0.87;  // Aproximadamente 2.61
-// Mesh.CharacteristicLengthMin = 1 * 0.87;  // Aproximadamente 0.87
-Mesh.CharacteristicLengthMax = 3;  // Aproximadamente 2.61
-Mesh.CharacteristicLengthMin = 1;  // Aproximadamente 0.87
+Mesh.CharacteristicLengthMax = 3 * 0.75;  // Aproximadamente 2.61
+Mesh.CharacteristicLengthMin = 1 * 0.75;  // Aproximadamente 0.87
+
 
 Mesh.CharacteristicLengthFactor = .4;
 

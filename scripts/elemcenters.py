@@ -7,6 +7,7 @@ pts=open(patient+'.pts','r')
 pts_lst=[]
 pts.readline()
 for line in pts:
+	# print(f"{line=}")
 	coord=line.split()
 	x=float(coord[0])
 	y=float(coord[1])

@@ -18,6 +18,7 @@ from sklearn.neighbors import NearestNeighbors
 def find_extreme_pts():
 	scar_pts=open(str(sys.argv[1])+'.pts','r') #open surface file
 	nr=int(scar_pts.readline().strip())
+	# print(f"{nr=}")
 	x=np.zeros(nr)
 	y=np.zeros(nr)
 	z=np.zeros(nr)
@@ -36,12 +37,14 @@ def exclude_values():
 	print('Collecting relevant heart coordinates...')
 	xmin,xmax,ymin,ymax,zmin,zmax=find_extreme_pts()
 	heart_pts=open(str(sys.argv[2]),'r')
-	#nr_elem=heart_pts.readline().strip()
+	# print(f" Antes Script: {len(heart_pts)=}")
+	# nr_elem=heart_pts.readline().strip()
 	included_pts=[]
 	line_nr=[]
 	counter=0
 	for line in heart_pts:
 		num=line.split()
+		# print(f"{num=}")
 		counter+=1
 		x1= float(num[0])<xmin
 		x2= float(num[0])>xmax
@@ -117,6 +120,7 @@ def print_regions(pts_reg_list):
 
 
 heart_pts,line_nr=exclude_values()
+print(f" Após script {len(heart_pts)=}")
 scar_pts,region_nr,nr_regions=get_scar_pts()
 #scale=15
 
